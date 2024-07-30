@@ -90,52 +90,12 @@ html, body {
 
 
 .divider {
-    height:150px;
-    max-height: 150px;
+    height:300px;
     width: 100vw;
     background-color: #999;
-    background: url("images/AdobeStock_170601825.jpeg") no-repeat;
-    /* background-size: contain; */
+    background: url("images/AdobeStock_444988670.jpeg") no-repeat;
     background-size: cover;
   }
-
-.divider_image_overlay {
-    opacity:70%;
-    padding: 0px;
-    /* object-fit: cover; */
-    background-size: contain;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-
-.heading_div {
-  text-align: center;
-}
-
-
-#partners {
-  text-align: center;
-}
-
-#credit {
-  text-align: center;
-  font-size: 10pt;
-  color: #999;
-}
-
-
-.heading {
-  font-weight: 700;
-  font-size: 25px;
-  color:#FFF;
-  background: #c20808;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 10px;
-}
-
 
 
 p {
@@ -156,25 +116,3 @@ a {
   text-decoration: none;
 }
 
-
-
-
-.photo:hover{
-  color: #424242;
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  opacity: 1;
-  transform: scale(2);
-  -ms-transform: scale(2); /* IE 9 */
-  -webkit-transform: scale(2); /* Safari and Chrome */
-
-}
-
-
-.panel-footer.panel-custom {
-    background: red;
-    color: white;
-}
