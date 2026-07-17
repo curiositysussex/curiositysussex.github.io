@@ -1,68 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<link rel="icon" href="favicon.ico">
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Curiosity Sussex</title>
-  <meta name="description" content="">
-  <meta name="author" content="Stephen Wilkins">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="description" content="Curiosity Sussex is a science education charity inspiring curiosity across Sussex.">
+  <title>Curiosity Sussex</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-<link rel="stylesheet" href="index.css">
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link rel="icon" type="image/png" href="dist/images/favicon.png"> -->
-
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Libre+Franklin:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#f8f3e8;--night:#17182a;--deep:#101120;--rose:#ff729f;--yellow:#ffe17b;--blue:#263a5d;--mint:#235d58;--sans:"DM Sans",sans-serif;--mono:"DM Mono",monospace;--heading:"Libre Franklin",sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--ink);font:17px/1.55 var(--sans)}a{color:inherit}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:white;color:black;padding:.5rem}.header{padding:16px 5.5vw;border-bottom:1px solid rgba(248,243,232,.2);display:flex;justify-content:space-between;align-items:center}.logo{font:800 18px/.96 var(--heading);letter-spacing:-.04em;text-decoration:none;text-transform:uppercase}.logo b{color:var(--rose)}nav{display:flex;gap:24px}nav a{text-decoration:none;font-weight:700;font-size:14px}nav a:hover{color:var(--rose)}.hero{min-height:540px;padding:clamp(75px,11vw,150px) 5.5vw 72px;background:linear-gradient(120deg,var(--night) 55%,var(--blue) 55%)}.eyebrow{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--yellow);margin:0 0 16px}.hero h1,h2,h3{font-family:var(--heading);font-weight:800;letter-spacing:-.05em;line-height:.98}.hero h1{font-size:clamp(58px,8vw,114px);max-width:850px;margin:0}.hero h1 span{color:var(--rose)}.hero p{max-width:600px;font-size:21px;margin:30px 0}.button{display:inline-block;text-decoration:none;background:var(--yellow);color:#17182a;padding:14px 20px;font-weight:800;font-size:14px}.section{padding:100px 5.5vw}.split{display:grid;grid-template-columns:.75fr 1.25fr;gap:10vw}.section h2{font-size:clamp(42px,5vw,72px);margin:0}.large-copy{font-size:22px;max-width:640px;margin:0}.large-copy+p{max-width:570px}.events{background:var(--deep)}.event-list{margin-top:42px;border-top:1px solid rgba(248,243,232,.25)}.event-row{display:grid;grid-template-columns:120px 1fr auto;align-items:center;gap:25px;padding:24px 4px;border-bottom:1px solid rgba(248,243,232,.25);text-decoration:none}.event-row:hover{color:var(--yellow)}.event-date{font:500 12px/1.35 var(--mono);letter-spacing:.07em;text-transform:uppercase}.event-row h3{font-size:clamp(24px,3vw,40px);margin:0}.event-row span:last-child{font-weight:800;font-size:23px}.event-note{padding:24px 4px;color:rgba(248,243,232,.75);font-size:16px}.festival-banner{background:var(--blue);padding:65px 5.5vw;display:grid;grid-template-columns:1.1fr .9fr;gap:8vw;align-items:center}.festival-banner h2{font:800 clamp(39px,5vw,70px)/.96 var(--heading);margin:0}.festival-banner h2 span{color:var(--yellow)}.festival-banner p{font-size:19px}.trustees{background:#20223b}.trustee-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:45px}.trustee{padding:25px;border:1px dashed rgba(248,243,232,.45);min-height:155px}.trustee p{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);margin:0 0 35px}.trustee h3{font-size:25px;margin:0}.contact{background:var(--yellow);color:#17182a}.contact h2{font-size:clamp(47px,6vw,85px);margin:0 0 22px}.contact a{font:800 clamp(22px,3vw,42px) var(--heading);text-decoration:none}.contact a:hover{color:var(--rose)}footer{padding:30px 5.5vw;background:#101120;display:flex;justify-content:space-between;gap:20px;font-size:13px}@media(max-width:760px){nav{display:none}.hero{background:var(--night);min-height:auto}.section{padding:70px 6vw}.split,.festival-banner{grid-template-columns:1fr;gap:28px}.event-row{grid-template-columns:1fr auto;gap:10px}.event-date{grid-column:1/3}.festival-banner{padding:55px 6vw}footer{display:block}.trustee-grid{margin-top:28px}}
+  </style>
 </head>
-<body class="code-snippets-visible">
-
-  <!-- splash screen
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <div class="container float-left"> -->
-    <div class="splash_container">
-
-    <img src="images/AdobeStock_717299860.jpeg" class="image_overlay">
-
-      <div class="title_container">
-        <h1 class="display-1 curiosity_sussex">Curiosity Sussex</h1>
-        <p class="fs-4"><b>Curiosity Sussex</b> is a small science education charity (registered charity number: <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5136116">1185269</a>) based in East Sussex, UK. Curiosity Sussex works with local partners to deliver event engaging local communities with the <b>STEM: Science, Technology, Engineering, and Mathematics</b> activity across the county.</p>
-
-        <p class="fs-4">Our next event is the <a href="lewes/25.html">2025 Lewes STEM Festival</a> due to be held in Lewes in November 2025. Previous events include early Lewes STEM Festivals and Brighton WonderFest 2019.</p>
-
-        <p class="fs-4">To get in touch with Curiosity Sussex please email us at <a href="mailto:curiositysussex@gmail.com">curiositysussex@gmail.com</a>.</p>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header"><a class="logo" href="#top">Curiosity<br><b>Sussex</b></a><nav><a href="#about">About</a><a href="#events">Events</a><a href="#trustees">Trustees</a><a href="#contact">Contact</a></nav></header>
+  <main id="main">
+    <section class="hero" id="top"><h1>Making room for <span>curiosity.</span></h1><p>Curiosity Sussex brings science, technology, engineering and maths to life through welcoming events and encounters across the county.</p><a class="button" href="#events">Explore our events →</a></section>
+    <section class="festival-banner"><div><p class="eyebrow">Coming up</p><h2>Lewes <span>STEM</span><br>Fair 2026</h2></div><div><p>Sunday 15 November · 11am–3pm<br>Lewes Town Hall · Free entry</p><a class="button" href="lewes/26.html">Visit the festival site →</a></div></section>
+    <section class="section split" id="about"><div><p class="eyebrow">About us</p><h2>Ideas are for everyone.</h2></div><div><p class="large-copy">We are a small science education charity based in Sussex. We create opportunities for people of all ages to meet the people, projects and questions shaping our world.</p><p>Since 2016, we have organised events including the Lewes STEM Fair, which most recently welcomed more than 30 exhibitors and 1,500 visitors. We have also brought people together for the Speakers Symposium, in partnership with Lewes Astronomical Society, and Lewes Stargazing Live.</p></div></section>
+   <section class="section events" id="events">
+      <p class="eyebrow">Events</p>
+      <h2>Come and be curious.</h2>
+      <div class="event-list">
+        <a class="event-row" href="index.html#previous"><span class="event-date">2025<br>Past event</span><h3>Lewes STEM Fair</h3><span>↗</span></a>
+        <a class="event-row" href="https://curiositysussex.github.io/lewes/24.html" target="_blank" rel="noreferrer"><span class="event-date">2024<br>Past event</span><h3>Lewes STEM Fair</h3><span>↗</span></a>
+        <a class="event-row" href="https://curiositysussex.github.io/lewes/23.html" target="_blank" rel="noreferrer"><span class="event-date">2023<br>Past event</span><h3>Lewes STEM Fair</h3><span>↗</span></a>
+        <div class="event-row"><span class="event-date">2019<br>Past event</span><h3>Lewes STEM Fair</h3><span>•</span></div>
+        <div class="event-row"><span class="event-date">2019<br>Past event</span><h3>Brighton WonderFest</h3><span>•</span></div>
+        <div class="event-row"><span class="event-date">2018<br>Past event</span><h3>Lewes STEM Fair</h3><span>•</span></div>
+        <div class="event-row"><span class="event-date">2017<br>Past event</span><h3>Lewes STEM Fair</h3><span>•</span></div>
+        <div class="event-row"><span class="event-date">2016<br>Past event</span><h3>Lewes STEM Fair</h3><span>•</span></div>
+        <div class="event-note">More Curiosity Sussex events will be announced here soon.</div>
       </div>
-    </div>
-  <!-- </div> -->
-
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </section>
+    <section class="section trustees" id="trustees"><p class="eyebrow">Our people</p><h2>Trustees</h2><div class="trustee-grid"><article class="trustee"><p>Trustee</p><h3>Stephen Wilkins</h3></article><article class="trustee"><p>Trustee</p><h3>Trustee name</h3></article><article class="trustee"><p>Trustee</p><h3>Trustee name</h3></article></div></section>
+    <section class="section contact" id="contact"><p class="eyebrow" style="color:#b63f6d">Get in touch</p><h2>Let’s make<br>something curious.</h2><a href="mailto:curiositysussex@gmail.com">curiositysussex@gmail.com</a></section>
+  </main>
+  <footer><span>Curiosity Sussex · Registered Charity No. 1185269</span></footer>
 </body>
 </html>
